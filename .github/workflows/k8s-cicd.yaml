@@ -7,7 +7,7 @@ on:
 
 env:
   DOCKER_IMAGE_NAME: abc-shopify-order
-  POD_DEPLOYMENT_NAME: ctseapp-deployment
+  POD_DEPLOYMENT_NAME: order-ctseapp-deployment
 
 jobs:
   deploy:
