@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const authRoute = require("./routes/auth");
 const orderRoute = require("./routes/order");
-const paymentRoute = require("./routes/payment");
 const cors = require("cors");
 
 dotenv.config();
@@ -20,7 +19,6 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/orders", orderRoute);
-app.use("/api/checkout", paymentRoute);
 
 app.listen(process.env.PORT || 5000, () => {
   console.log("Backend server is running!");
